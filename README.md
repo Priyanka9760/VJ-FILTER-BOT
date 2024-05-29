@@ -2,10 +2,10 @@
   <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="AJ-Filter-Bot Logo">
 </p>
 <h1 align="center">
-  VJ FILTER BOT
+  AJ FILTER BOT
 </h1>
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+VJ+Filter+Bot!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+AJ+Filter+Bot!)
 </p>
 
 ## Main Feature 
