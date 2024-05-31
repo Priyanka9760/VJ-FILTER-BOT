@@ -41,7 +41,7 @@ async def doc(bot, update):
         new_filename = new_name.split(":-")[1]
         file = update.message.reply_to_message
         file_path = f"downloads/{new_filename}"
-        ms = await update.message.edit("⚠️__**Aj Friends Please wait...**__\n\n__Downloading file for Aj Server...__")
+        ms = await update.message.edit("⚠️ __**Aj Friends Please wait...**__\n\n__Downloading file for Aj Server...__")
         c_time = time.time()
         try:
             path = await bot.download_media(
@@ -85,7 +85,7 @@ async def doc(bot, update):
             img = Image.open(ph_path)
             img.resize((320, 320))
             img.save(ph_path, "JPEG")
-        await ms.edit("⚠️__**Aj Friends Please wait...**__\n\n__Aj Processing file uploading...__")
+        await ms.edit("⚠️ __**Aj Friends Please wait...**__\n\n__Aj Processing file uploading...__")
         c_time = time.time() 
         try:
            if type == "document":
@@ -95,7 +95,7 @@ async def doc(bot, update):
                     thumb=ph_path, 
                     caption=caption, 
                     progress=progress_for_pyrogram,
-                    progress_args=( "⚠️__**Aj Friends Please wait...**__\n__Aj Processing file uploading...__",  ms, c_time)) 
+                    progress_args=( "⚠️ __**Aj Friends Please wait...**__\n__Aj Processing file uploading...__",  ms, c_time)) 
            elif type == "video": 
                await bot.send_video(
 	            update.message.chat.id,
@@ -104,7 +104,7 @@ async def doc(bot, update):
 	            thumb=ph_path,
 	            duration=duration,
 	            progress=progress_for_pyrogram,
-	            progress_args=( "⚠️__**Aj Friends Please wait...**__\n__Aj Processing file uploading...__",  ms, c_time)) 
+	            progress_args=( "⚠️ __**Aj Friends Please wait...**__\n__Aj Processing file uploading...__",  ms, c_time)) 
            elif type == "audio": 
                await bot.send_audio(
 	            update.message.chat.id,
@@ -113,7 +113,7 @@ async def doc(bot, update):
 	            thumb=ph_path,
 	            duration=duration,
 	            progress=progress_for_pyrogram,
-	            progress_args=( "⚠️__**Aj Friends Please wait...**__\n__Aj Processing file uploading...__",  ms, c_time)) 
+	            progress_args=( "⚠️ __**Aj Friends Please wait...**__\n__Aj Processing file uploading...__",  ms, c_time)) 
         except Exception as e: 
             await ms.edit(f" Erro {e}") 
             os.remove(file_path)
