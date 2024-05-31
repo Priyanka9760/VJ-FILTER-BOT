@@ -660,7 +660,7 @@ Also your tutorial will be Added Your Group..."""
 તેમજ તમારી ટીમ વિડિયો કલેક્શનની તાલીમ આપશે..."""
 
     KANNADA_INFO = """
-ಹೇ {message.from_user.mention}
+ಹೇ <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a>
 
  ಈಗ ನೀವು ಟೆಲಿಗ್ರಾಮ್‌ನಲ್ಲಿಯೂ ಹಣ ಗಳಿಸಬಹುದು.
 
